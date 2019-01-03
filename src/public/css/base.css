@@ -1,0 +1,164 @@
+@charset "utf-8";
+
+html {
+	font-family: "Helvetica", sans-serif;
+	-webkit-text-size-adjust: 100%;/*禁止手机横屏竖屏切换自动缩放字体大小*/
+	-ms-text-size-adjust: 100%;
+	-webkit-user-select: none;/*不允许选中文本*/
+	-moz-user-select: -moz-none;
+	-webkit-touch-callout: none;/*系统菜单被禁用*/
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);/*清除tap时背景颜色高亮*/
+	-moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	font-size: 50px;
+	-webkit-font-smoothing: antialiased;/*字体平滑清晰*/
+	-moz-osx-font-smoothing: grayscale;/*字体平滑清晰*/
+	-webkit-overflow-scrolling: touch;
+}
+
+a:focus, input:focus, p:focus, span:focus, div:focus {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body, h1, h2, h3, h4, h5, h6, hr, p, iframe, dl, dt, dd, ul, ol, li, pre, div, form, button, input, textarea, fieldset, th, td, header, footer, section, aside, details, menu, article, section, nav, address, hgroup, figure, figcaption, legend {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+	height: 0;
+	display: none;
+}
+
+/*隐藏滚动条 Chrome,Safari*/
+ul, ol, dl {
+	list-style-type: none;
+}
+
+img {
+	border: 0;
+	display: block;
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+audio, canvas, progress, video {
+	display: inline-block;
+}
+
+audio:not([controls]) {
+	display: none;
+}
+
+/*音频文件档没有控制的时候，隐藏*/
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/*svg 如果没有跟根元素代码就隐藏*/
+a {
+	outline: 0;
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+	background: transparent;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+:active {
+	outline: none;
+}
+
+:focus {
+	outline: none;
+}
+
+[disabled] {
+	cursor: default;
+}
+
+address, caption, cite, code, dfn, em, th, var {
+	font-style: normal;
+}
+
+pre {
+	white-space: pre-wrap;
+	overflow: auto;
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], input[type="text"], input[type="password"] {
+	border: none;
+	outline: none;
+	-webkit-appearance: none;/*去掉默认样式*/
+}
+
+input[type="radio"], input[type="checkbox"] {
+	padding: 0;
+	cursor: pointer;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+i, span, time, a {
+	display: inline-block;
+}
+
+/*表格*/
+table {
+	width: 100%;
+	empty-cells: show;
+	border-spacing: 0;
+	border-collapse: collapse;
+	background-color: transparent;
+}
+
+table th, table td {
+	text-align: left;
+}
+
+.table th {
+	font-weight: bold;
+}
+
+/*浮动*/
+.fl {
+	float: left !important;
+}
+
+.fr {
+	float: right !important;
+}
+
+/*清除浮动*/
+.cl:after, .cl {
+	content: "\20";
+	display: block;
+	clear: both;
+}
+
+/*隐藏*/
+.hide {
+	display: none;
+}
+
+/*水平垂直居中*/
+.center{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
